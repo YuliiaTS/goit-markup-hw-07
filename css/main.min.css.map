@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_vars.scss",
+        "../sass/utils/_hidden.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
