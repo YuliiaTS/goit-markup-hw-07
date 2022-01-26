@@ -166,14 +166,13 @@ ul li.current a {
   transition: color 250ms var(--timing-function);
 }
 
+.contact-us-header:hover, .contact-us-header:focus {
+  color: var(--brand-color);
+}
+
 .contact-us-icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.contact-us-header:hover,
-.contact-us-header:focus {
-  color: var(--brand-color);
 }
 
 .container {
