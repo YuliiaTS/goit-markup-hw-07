@@ -1,0 +1,39 @@
+.works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list-works {
+    display: flex;
+}
+
+.list-works .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list-works .item {
+    width: 370px;
+}
+
+.works-thumb {
+    position: relative;
+}
+
+.works-thumb >.works-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 27px 0;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+}

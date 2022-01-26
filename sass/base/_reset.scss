@@ -14,3 +14,12 @@ img {
 button {
     cursor: pointer;
 }
+
+.list {
+    list-style: none;
+    list-style-type: none;
+}
+
+a[href] {
+    text-decoration: none;
+}
