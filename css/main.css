@@ -70,6 +70,10 @@ body {
   color: var(--text-color);
 }
 
+.logo-footer {
+  color: #ffffff;
+}
+
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
