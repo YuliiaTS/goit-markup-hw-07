@@ -1,6 +1,3 @@
-.logo-footer {
-    color: var(--accent-color);
-}
 .footer-bg {
     background-color: #2F303A;
     padding-top: 60px;
@@ -71,15 +68,13 @@ address {
     align-items: center;
     border-radius: 50%;
     transition: background-color 250ms var(--timing-function);
+    &:hover, &:focus {
+        background-color: var(--brand-color);
+    }
 }
 
 .footer-social-icon {
     fill: var(--accent-color);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: var(--brand-color);
 }
 
 .signup-thumb {
@@ -134,11 +129,9 @@ address {
     height: 50px;
     padding: 10px 29px;
     transition: background-color 250ms var(--timing-function);
-}
-
-.signup-btn:hover,
-.signup-btn:focus {
-    background-color: #188CE8;
+    &:hover, &:focus {
+        background-color: #188CE8;
+    }
 }
 
 .signup-icon {

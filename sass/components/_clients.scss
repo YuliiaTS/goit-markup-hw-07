@@ -24,14 +24,12 @@
     align-items: center;
     color: #AFB1B8;
     transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
+    &:hover, &:focus {
+        border: 1px solid #2196F3;
+        color: var(--brand-color);
+    }
 }
 
 .client-icon {
     fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-    border: 1px solid #2196F3;
-    color: var(--brand-color);
 }

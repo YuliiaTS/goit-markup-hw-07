@@ -69,14 +69,12 @@
     border-radius: 50%;
     color: #AFB1B8;
     transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+    &:hover, &:focus {
+        background-color: var(--brand-color);
+        color: var(--accent-color);
+    }
 }
 
 .team-social-icon {
     fill: currentColor;
-}
-
-.team-social-link:hover,
-.team-social-link:focus{
-    background-color: var(--brand-color);
-    color: var(--accent-color);
 }
