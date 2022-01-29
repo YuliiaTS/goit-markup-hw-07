@@ -3,23 +3,30 @@
     padding-bottom: 94px;
 }
 
-.list-works {
-    display: flex;
+&__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.list-works .item:not(:last-child) {
+&__list {
+    display: flex;
+    .item {
+        width: 370px;
+    }
+}
+
+&__list .item:not(:last-child) {
     margin-right: 30px;
 }
 
-.list-works .item {
-    width: 370px;
-}
-
-.works-thumb {
+&__thumb {
     position: relative;
 }
 
-.works-thumb >.works-text {
+&__text {
     position: absolute;
     left: 0;
     right: 0;

@@ -1,33 +1,33 @@
-.footer-bg {
+.footer {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    
+    .container {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
-.footer-bg .container {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-adrs {
+.footer__contacts {
     display: flex;
     flex-direction: column;
     margin-right: 70px;
 }
 
-.address-footer {
+.f-contacts__address {
     color: var(--accent-color);
 }
 
-.contacts-footer1, .contacts-footer2 {
+.f-contacts__mail, .f-contacts__tel {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.list-footer {
+.f-contacts__list {
     margin-top: 9px;
 }    
 
-.item-footer {
+.f-contacts__item {
     margin-top: 9px;
 }
 
@@ -36,11 +36,11 @@ address {
     margin-top: 20px;
 }
 
-.footer-social {
+.footer__social {
     margin-right: 93px;
 }
 
-.footer-text, .footer-modal-text {
+.f-social__text, .signup__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -48,18 +48,18 @@ address {
     color: var(--accent-color);
 }
 
-.footer-social-list {
+.f-social__list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.footer-social-item + .footer-social-item {
+.f-social__item + .f-social__item {
     margin-left: 10px;
 }
 
-.footer-social-link {
+.f-social__link {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -73,18 +73,18 @@ address {
     }
 }
 
-.footer-social-icon {
+.f-social__icon {
     fill: var(--accent-color);
 }
 
-.signup-thumb {
+.signup__thumb {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.signup-input {
+.signup__input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -96,13 +96,12 @@ address {
     margin-right: 12px;
     outline: none;
     transition: border-color 250ms var(--timing-function);
+    &:focus {
+        border-color: var(--brand-color);
+    }
 }
 
-.signup-input:focus {
-    border-color: var(--brand-color);
-}
-
-.signup-input::placeholder {
+.signup__input::placeholder {
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
@@ -110,11 +109,11 @@ address {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.signup-wrap {
+.signup__wrap {
     position: relative;
 }
 
-.signup-btn {
+.signup__btn {
     background-color: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -134,7 +133,7 @@ address {
     }
 }
 
-.signup-icon {
+.signup__icon {
     fill: var(--accent-color);
     margin-left: 10px;
     position: absolute;

@@ -2,7 +2,7 @@
     padding-top: 94px;
 }
 
-.feature-thumb {
+.feature__thumb {
     background-color: #F5F4FA;
     height: 120px;
     margin-bottom: 30px;
@@ -11,11 +11,11 @@
     align-items: center;
 }
 
-.feature-icon {
+.feature__icon {
     fill: var(--text-color);
 }
 
-.feature-title-item {
+.feature__title-item {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -26,18 +26,19 @@
     margin-bottom: 10px;
 }
 
-.feature-text {
+.feature__text {
     line-height: 1.7;
     color: #757575;
 }
 
-.feature-list {
+.feature__list {
     display: flex;
 }
 
-.feature-list .item:not(:last-child) {
+.feature__list .item:not(:last-child) {
     margin-right: 30px;
 }
-.feature-list .item {
+
+.feature__list .item {
     width: 270px;
 }
