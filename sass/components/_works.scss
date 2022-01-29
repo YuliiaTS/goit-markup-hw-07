@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 }
 
-&__title {
+.works__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -11,22 +11,22 @@
     margin-bottom: 50px;
 }
 
-&__list {
+.works__list {
     display: flex;
     .item {
         width: 370px;
     }
 }
 
-&__list .item:not(:last-child) {
+.works__list .item:not(:last-child) {
     margin-right: 30px;
 }
 
-&__thumb {
+.works__thumb {
     position: relative;
 }
 
-&__text {
+.works__text {
     position: absolute;
     left: 0;
     right: 0;

@@ -6,19 +6,19 @@
     <title>Студия</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
         <nav class="header-nav">
-            <a href="./index.html" class="logo">Web<span class="logo-nav">Studio</span></a>
+            <a href="./index.html" class="logo">Web<span class="logo__studio">Studio</span></a>
             <ul class="list site-nav">
                 <li class="item current site-nav__item">
-                    <a href="./index.html" class="site-nav__link">Студия</a>    
+                    <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>    
                 </li>
                 <li class="item site-nav__item">
                     <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
@@ -334,7 +334,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__contacts f-contacts">
-            <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+            <a href="./index.html" class="logo">Web<span class="logo__studio logo__studio--inverse">Studio</span></a>
             <address>
                 <span class="f-contacts__address">г. Киев, пр-т Леси Украинки, 26</span>
                 <ul class="list f-contacts__list">
@@ -394,61 +394,61 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close" data-modal-close>
-                <svg class="modal-close-icon" width="18" height="18">
+            <button type="button" class="modal__close-btn" data-modal-close>
+                <svg class="modal__close-icon" width="18" height="18">
                     <use href="./images/icons.svg#close-black"></use>
                 </svg>
             </button>
-            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#" name="call-back_form">
-                <div class="form-field">
-                    <label for="user-name" class="form-label">Имя</label>
-                    <div class="form-wrap">
+                <div class="form">
+                    <label for="user-name" class="form__label">Имя</label>
+                    <div class="form__wrap">
                         <input
                             type="text"
                             name="user-name"
-                            class="form-input"
+                            class="form__input"
                             placeholder=""
                             id="user-name"
                             required
                         />
-                        <svg class="form-icon" width="18" height="18">
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/icons.svg#person-modal"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="user-tel" class="form-label">Телефон</label>
-                    <div class="form-wrap">
-                        <input type="tel" name="user-tel" class="form-input" placeholder="" id="user-tel" required />
-                        <svg class="form-icon" width="18" height="18">
+                <div class="form">
+                    <label for="user-tel" class="form__label">Телефон</label>
+                    <div class="form__wrap">
+                        <input type="tel" name="user-tel" class="form__input" placeholder="" id="user-tel" required />
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/icons.svg#phone-modal"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="user-email" class="form-label">Почта</label>
-                    <div class="form-wrap">
-                        <input type="email" name="user-email" class="form-input" placeholder="" id="user-email" />
-                        <svg class="form-icon" width="18" height="18">
+                <div class="form">
+                    <label for="user-email" class="form__label">Почта</label>
+                    <div class="form__wrap">
+                        <input type="email" name="user-email" class="form__input" placeholder="" id="user-email" />
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/icons.svg#email-modal"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                <label for="user-coment" class="form-label">Комментарий</label>
-                    <textarea name="user-coment" id="user-coment" class="form-input-coment" placeholder="Введите текст"></textarea>
+                <div class="form">
+                <label for="user-coment" class="form__label">Комментарий</label>
+                    <textarea name="user-coment" id="user-coment" class="form__input-coment" placeholder="Введите текст"></textarea>
                 </div>
-                <div class="form-checkbox">
-                    <input type="checkbox" name="policy" id="policy" class="policy-check visually-hidden" />
-                    <label for="policy" class="check-text">
+                <div class="checkbox">
+                    <input type="checkbox" name="policy" id="policy" class="checkbox__check visually-hidden" />
+                    <label for="policy" class="checkbox__text">
                         <span>
-                            <svg class="policy-icon" width="16" height="15">
+                            <svg class="checkbox__icon" width="16" height="15">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
                         Соглашаюсь с рассылкой и принимаю
-                        <p class="modal-link"><a href="" class="modal-link">Условия договора</a></p>
+                        <a href="" class="checkbox__link">Условия договора</a>
                     </label>
                 </div>
                 <button type="submit" class="submit-btn">Отправить</button>

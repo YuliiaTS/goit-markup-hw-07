@@ -33,9 +33,13 @@
     }
 }
 
-ul li.current a {
+.site-nav__link--active {
     color: var(--brand-color);
 }
+
+// ul li.current a {
+//     color: var(--brand-color);
+// }
 
 .current a::after {
     content: "";
