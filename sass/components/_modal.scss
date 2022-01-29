@@ -177,12 +177,12 @@
 }
 
 .modal-link {
-    color: var(--brand-color);
     margin-left: 3px;
+    text-decoration: underline;
 }
 
-.modal-link p {
-    text-decoration: underline;
+.modal-link a {
+    color: var(--brand-color);
 }
 
 .policy-icon {
